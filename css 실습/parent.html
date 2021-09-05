@@ -3,7 +3,11 @@
     <head>
         <style>
             ul li{color: red;}
-            ol>li>ol>li{border : 1px solid red ;}
+            #parent li{border : 1px solid red ;
+            color: blue;}
+            ul, ol{
+                background-color: powderblue;
+            }
         </style>
     </head>
     <body>
@@ -12,12 +16,12 @@
             <li>CSS</li>
             <li>JavaScript</li>
         </ul>
-        <ol>
+        <ol id="parent">
             <li>HTML</li>
             <li>CSS
                 <ol>
-                    <li>HTML</li>
-                    <li>CSS</li>
+                    <li>selector</li>
+                    <li>declaration</li>
                 </ol>
             </li>
             <li>JavaScript</li>
