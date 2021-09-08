@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+}
+
+.alert {
+    height: 38.8px;
+    width: 100%;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#call_icon, #popular_icon, #info_icon{
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+}
+
+label {
+    padding: 0px;
+}
+
+#call, #popular, #info {
+    flex-shrink: 1;
+}
+
+.info_line, .call_line, .popular_line {
+    display: flex;
+    align-content: center;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    font-size: 11px;
+    padding: 0px;
+}
+
+#info a, #call a, #popular a{
+    text-decoration: none;
+    color: white;
+}
+
+#info a:hover, #call a:hover, #popular a:hover {
+    text-decoration:underline white;
+}
+
+li a {
+    display: flex;
+    align-content: center;
+}
+
+.alert span {
+    flex-basis: 60px;
+}
+
+#info, #call, #popular {
+}
+/*미디어 쿼리 중간 단계*/
+@media(max-width:1200px) {
+    .alert span{
+        flex-basis: 36px;
+    }
+    
+}
+@media(max-width:900px) {
+    .blank_1, .blank_2, .call_line, .info_line{
+        display: none;
+    }
+    .alert {
+        height: 50.8px;
+    }
+}
